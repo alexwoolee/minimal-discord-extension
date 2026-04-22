@@ -1,0 +1,13 @@
+{
+    "name": "Discord Twitch",
+    "description": "Makes Discord minimal",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://*.discord.com/*"],
+            "css": ["styles.css"],
+            "run_at": "document_start"
+        }
+    ]
+}
